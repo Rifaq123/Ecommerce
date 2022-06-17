@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "IPhone 13 Pro",
+    "image": "https://images-eu.ssl-images-amazon.com/images/I/3150P3KQFlL._SY445_SX342_QL70_FMwebp_.jpg",
+    "price": "699",
+    "freedelivery": "FREE Delivery",
+    "quantity": 1,
+    "storage": 128,
+    "ram":12,
+    "brand": "APPLE",
+    "wishlist": "true"
+
+  },
+  {
+    "id": 2,
+    "title": "Samsung  A73 5G ",
+    "image": "https://images-eu.ssl-images-amazon.com/images/I/41oIDn6WNjL._SX300_SY300_QL70_FMwebp_.jpg",
+    "price": "966",
+    "freedelivery": "FREE Delivery",
+    "quantity": 1,
+    "storage": 128,
+    "ram":8,
+    "brand": "SAMSUNG",
+    "wishlist": "true"
+
+  },
+
+  {
+    "id": 3,
+    "title": "OnePlus Nord 9T",
+    "image": "https://images-eu.ssl-images-amazon.com/images/I/41HSkMxLEJL._SX300_SY300_QL70_FMwebp_.jpg",
+    "price": "339",
+    "freedelivery": "FREE Delivery",
+    "quantity": 1,
+    "storage": 256,
+    "ram":12,
+    "brand": "ONEPLUS",
+    "wishlist": "true"
+
+  },
+
+  {
+    "id": 4,
+    "title": "Redmi Note 11 Pro+ ",
+    "image": "https://images-eu.ssl-images-amazon.com/images/I/41WytpW9lRL._SX300_SY300_QL70_FMwebp_.jpg",
+    "price": "247",
+    "freedelivery": "FREE Delivery",
+    "quantity": 1,
+    "storage": 128,
+    "ram":8,
+    "brand": "REDMI XIAOMI",
+    "wishlist": "true"
+
+    },
+  {
+    "id": 5,
+    "title": "Nokia G10",
+    "image": "https://images-eu.ssl-images-amazon.com/images/I/41gq8sZQyGL._SX300_SY300_QL70_FMwebp_.jpg",
+    "price": "300",
+    "freedelivery": "FREE Delivery",
+    "quantity": 1,
+    "storage": 64,
+    "ram":6,
+    "brand": "NOKIA",
+    "wishlist": "true"
+
+    },
+  {
+    "id": 6,
+    "title": "Realme 9 Pro",
+    "image": "https://www.reliancedigital.in/medias/Realme-9-Pro-Plus-Smart-Phones-492849166-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1OTQwOHxpbWFnZS9qcGVnfGltYWdlcy9oMjIvaGI5Lzk3NzkzMzQzODE1OTguanBnfDMyOWE4MWExMDM1NzliMDcxZWQ5ZWVhN2Q2M2I4YzYyNzVhYTBjYmViZjdkY2MwMzkzMWM5ZmIzM2Q3YmM0YjI",
+    "price": "235",
+    "freedelivery": "FREE Delivery",
+    "quantity": 1,
+    "storage": 64,
+    "ram":8,
+    "brand": "REALME",
+    "wishlist": "true"
+
+    },
+  {
+    "id": 7,
+    "title": "Vivo Y15s ",
+    "image": "https://m.media-amazon.com/images/I/71Irb1PBFCL._SX679_.jpg",
+    "price": "260",
+    "freedelivery": "FREE Delivery",
+    "quantity": 1,
+    "storage": 32,
+    "ram":4,
+    "brand": "VIVO",
+    "wishlist": "true"
+
+  },
+  {
+    "id": 8,
+    "title": "OPPO A16",
+    "image": "https://m.media-amazon.com/images/I/41VSpNuwi+L._SY300_SX300_.jpg",
+    "price": "460",
+    "freedelivery": "FREE Delivery",
+    "quantity": 1,
+    "storage": 16,
+    "ram":4,
+    "brand": "OPPO",
+    "wishlist": "true"
+
+  },
+ 
+  {
+    "id": 9,
+    "title": "Moto G 52",
+    "image": "https://www.91-img.com/pictures/150015-v8-moto-g52-mobile-phone-large-1.jpg",
+    "price": "377",
+    "freedelivery": "FREE Delivery",
+    "quantity": 1,
+    "storage": 64,
+    "ram":4,
+    "brand": "MOTOROLA",
+    "wishlist": "true"
+
+  }
+]
