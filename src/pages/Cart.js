@@ -11,7 +11,7 @@ import {
 import { red } from "@mui/material/colors";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-
+import {HOME} from "../config/constants"
 const Cart = () => {
   const cart = useSelector((state) => state.cart.Carts);
 
@@ -27,7 +27,7 @@ const Cart = () => {
   var grandtotal = 0;
   var cartitem = 0;
   const onclickHome = (e) => {
-    navigate("/");
+    navigate(HOME);
   };
 
   return (

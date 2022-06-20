@@ -224,7 +224,7 @@ right: 0;
 .productimage{
   /* height: 22vh; */
   /* min-height: 44vh; */
-  min-height: 34vh;
+  min-height: 29vh;
 }  /* max-height: 30vh; */
       /* object-fit: none !important;
     padding-left: 0px !important;
@@ -233,7 +233,6 @@ right: 0;
 .whitepreview {
   color: white;
 }
-
 
 .views{
   font-size: medium;
@@ -1034,4 +1033,10 @@ background-color: gray;
 } */
 .starBorderOutlined {
   background-color:  #ff0000 !important;
+ }
+
+ .wishdel{
+  text-align: end;
+  padding-right: 20px;
+  cursor: pointer;
  }

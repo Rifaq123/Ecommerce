@@ -5,11 +5,9 @@ import Typography from "@mui/material/Typography";
 import { useDispatch, useSelector } from "react-redux";
 
 import { Link, Navigate } from "react-router-dom";
-import Cart from "./Cart";
 import {
   addToCart,
-  DecreaseQuantity,
-  IncreaseQuantity,
+
 } from "../redux/actions/cart";
 
 const Preview = () => {

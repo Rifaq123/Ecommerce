@@ -24,7 +24,7 @@ const Products = () => {
       <div className="container-custom ">
         <div className="cardsproduct  px-5 d-flex pb-5">
           <div className="row">
-            {productimage.map((value, dummy) => {
+            {productimage?.map((value, dummy) => {
               return (
                 <>
                   <div className="col-md-4  col-lg-4 carddata">
@@ -35,6 +35,8 @@ const Products = () => {
                     </div>
 
                     <Cardsimg
+                      cart={cart}
+                      id={value.id}
                       image={value.image}
                       title={value.title}
                       ratings="3.5"

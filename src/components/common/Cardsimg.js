@@ -4,20 +4,18 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
-import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Rating from "@mui/material/Rating";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart, ViewProduct, WishList } from "../../redux/actions/cart";
-import { getValue } from "@testing-library/user-event/dist/utils";
-import Wishlist from "../../pages/Wishlist";
-
-// import { addToCart } from "../../redux/actions/cart";
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 
 function Cardsimg(props) {
+
+
   const dispatch = useDispatch();
 
   return (
@@ -25,11 +23,23 @@ function Cardsimg(props) {
       <div>
         <Card className="title ">
           <CardActionArea>
+            {props.cart.find(
+              (selectedAddress) => selectedAddress.id == props.id
+            ) ? 
             <p className="heart">
-              <FavoriteBorderIcon
-                onClick={() => dispatch(WishList(props.wishlist))}
-              />
-            </p>
+               <FavoriteIcon
+              onClick={() => dispatch(WishList(props.wishlist))}
+            />
+         
+          </p>
+            : 
+            <p className="heart">
+            <FavoriteBorderIcon
+              onClick={() => dispatch(WishList(props.wishlist))}
+            />
+          </p>
+            }
+           
 
             <CardMedia
               component="img"
@@ -91,9 +101,6 @@ function Cardsimg(props) {
                 Add to cart
               </button>
 
-              {/* <a href="#" class="round-black-btn">
-                  Add to Cart
-                </a> */}
               {/* </Link> */}
             </CardContent>
           </CardActionArea>

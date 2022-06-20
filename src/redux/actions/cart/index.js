@@ -16,10 +16,10 @@ export const addToCart = (value) => {
       payload: value
     };
   };
-export const DeleteCart = (item) => {
+export const DeleteCart = (payload) => {
     return {
       type: "DELETE_TO_CART",
-      payload: item
+      payload
     };
   };
 export function IncreaseQuantity(item){
