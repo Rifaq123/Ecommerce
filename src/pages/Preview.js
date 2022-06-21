@@ -3,19 +3,20 @@ import Header from "../components/Header/Header";
 import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
 import { useDispatch, useSelector } from "react-redux";
-
+import { ToastContainer } from "react-toastify";
 import { Link, Navigate } from "react-router-dom";
 import {
   addToCart,
 
 } from "../redux/actions/cart";
+import { HOME } from "../config/constants";
 
 const Preview = () => {
   const cart = useSelector((state) => state.cart.preview);
   console.log("cart", cart);
   const dispatch = useDispatch();
   const onclickHome = (e) => {
-    Navigate("/");
+    Navigate(HOME);
   };
 
   return (
@@ -100,6 +101,7 @@ const Preview = () => {
                     >
                       Add to Cart
                     </a>
+                    
                   </div>
                 </div>
               </div>

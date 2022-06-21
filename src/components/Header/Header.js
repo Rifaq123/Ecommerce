@@ -1,35 +1,29 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-
 import logo from "../../assests/images/mobile/logomm.png";
-
 import Avatar from "@mui/material/Avatar";
 import Badge from "@mui/material/Badge";
-import { styled } from "@mui/material/styles";
-import IconButton from "@mui/material/IconButton";
-
 import Stack from "@mui/material/Stack";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import LoginIcon from "@mui/icons-material/Login";
-// import Stack from '@mui/material/Stack';
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import HomeIcon from "@mui/icons-material/Home";
-
 import { useNavigate } from "react-router-dom";
-
 import { Link } from "react-router-dom";
-
 import "../../assests/css/style.css";
 import { useSelector } from "react-redux";
+import {HOME} from "../../config/constants"
+
+
 
 export default function Header() {
   const navigate = useNavigate();
 
   const onclickHome = (e) => {
-    navigate("/");
+    navigate(HOME);
   };
 
   const cart = useSelector((state) => state.cart.Carts);

@@ -3,19 +3,20 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
+import { CardActionArea } from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Rating from "@mui/material/Rating";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart, ViewProduct, WishList } from "../../redux/actions/cart";
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import { red } from "@mui/material/colors";
+import { purple } from "@mui/material/colors";
+import { toast } from "react-toastify";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 function Cardsimg(props) {
-
-
   const dispatch = useDispatch();
 
   return (
@@ -23,24 +24,20 @@ function Cardsimg(props) {
       <div>
         <Card className="title ">
           <CardActionArea>
-            {props.cart.find(
-              (selectedAddress) => selectedAddress.id == props.id
-            ) ? 
-            <p className="heart">
-               <FavoriteIcon
-              onClick={() => dispatch(WishList(props.wishlist))}
-            />
-         
-          </p>
-            : 
-            <p className="heart">
-            <FavoriteBorderIcon
-              onClick={() => dispatch(WishList(props.wishlist))}
-            />
-          </p>
-            }
-           
-
+            {props.cart.find((e) => e.id == props.id) ? (
+              <p className="heart">
+                <FavoriteIcon
+                  sx={{ color: red[500] }}
+                  onClick={() => dispatch(WishList(props.wishlist))}
+                />
+              </p>
+            ) : (
+              <p className="heart">
+                <FavoriteBorderIcon
+                  onClick={() => dispatch(WishList(props.wishlist))}
+                />
+              </p>
+            )}
             <CardMedia
               component="img"
               image={props.image}
@@ -91,17 +88,31 @@ function Cardsimg(props) {
                   />
                 </div>
               </Link>
-              {/* <Link to="/Cart"> */}
-              <button
-                type="button"
-                class="btn btn-dark whitepreview mx-1"
-                id="checkout"
-                onClick={() => dispatch(addToCart(props.main))}
-              >
-                Add to cart
-              </button>
 
-              {/* </Link> */}
+              {props.carts.find((e) => e.id == props.id) ? (
+                <Link to="/Cart">
+                  <button
+                    type="button"
+                    class="btn btn-dark whitepreview mx-1"
+                    id="checkout"
+                    onClick={() => dispatch(addToCart(props.main))}
+                  >
+                    Go to cart <ShoppingCartIcon sx={{ color: purple[500] }} />
+                  </button>
+                </Link>
+              ) : (
+                <button
+                  type="button"
+                  class="btn btn-dark whitepreview mx-1"
+                  id="checkout"
+                  onClick={() => {
+                    dispatch(addToCart(props.main));
+                    toast.success("Added to cart", { autoClose: 1000 });
+                  }}
+                >
+                  Add to cart <ShoppingCartIcon />
+                </button>
+              )}
             </CardContent>
           </CardActionArea>
         </Card>

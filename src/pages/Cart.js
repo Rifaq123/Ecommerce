@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import Header from "../components/Header/Header";
-import DangerousIcon from "@mui/icons-material/Dangerous";
+import React from "react";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -11,16 +9,14 @@ import {
 import { red } from "@mui/material/colors";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import {HOME} from "../config/constants"
+import { HOME } from "../config/constants";
+import { toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
+
 const Cart = () => {
   const cart = useSelector((state) => state.cart.Carts);
 
   console.log("d", cart);
-  // const cartItems = cart.length;
-
-  const empty = () => {
-    cartItems == 0;
-  };
 
   const dispatch = useDispatch();
 
@@ -32,11 +28,11 @@ const Cart = () => {
 
   return (
     <div className="container-body">
-      <Header />
+      <ToastContainer />
       <div className="containerr">
         {cart.length > 0 ? (
           <div className="cart-container mt-5">
-                    <h1>My Shopping Cart</h1>
+            <h1>My Shopping Cart</h1>
 
             <div className="productcont">
               <div className="row">
@@ -52,7 +48,7 @@ const Cart = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {cart.map((item, key) => {
+                      {cart?.map((item, index) => {
                         grandtotal += item.price * item.quantity;
                         cartitem += item.quantity;
                         return (
@@ -77,9 +73,12 @@ const Cart = () => {
                                   <button
                                     className="qtyminus d-flex align-items-center justify-content-center"
                                     onClick={() =>
-                                      dispatch(DecreaseQuantity(item))
+                                      dispatch(DecreaseQuantity(item)) &&
+                                      toast.warning("Decreased Quantity", {
+                                        autoClose: 1000,
+                                      })
                                     }
-                                    disabled={item.quantity <= 1 }
+                                    disabled={item.quantity <= 1}
                                   >
                                     -
                                   </button>
@@ -88,10 +87,13 @@ const Cart = () => {
                                   </span>
                                   <button
                                     className="qtyplus d-flex align-items-center justify-content-center"
-                                    onClick={() =>
-                                      dispatch(IncreaseQuantity(item))
-                                    }
-                                    disabled= {item.quantity >= 5}
+                                    onClick={() => {
+                                      dispatch(IncreaseQuantity(item)) &&
+                                        toast.info("Increased Quantity", {
+                                          autoClose: 1000,
+                                        });
+                                    }}
+                                    disabled={item.quantity >= 5}
                                   >
                                     +
                                   </button>
@@ -106,12 +108,18 @@ const Cart = () => {
                               </p>
                             </td>
                             <td>
-                              <p
-                                className="product-count"
-                                onClick={() => dispatch(DeleteCart(item))}
+                              <button
+                                className="product-count remove"
+                                onClick={() => {
+                                  dispatch(DeleteCart(item)) &&
+                                    toast.error("deleted", {
+                                      autoClose: 1000,
+                                    });
+                                }}
                               >
-                                <DeleteForeverIcon sx={{ color: red[500] }} />
-                              </p>
+                                Remove
+                                {/* <DeleteForeverIcon sx={{ color: red[500] }} /> */}
+                              </button>
                             </td>
                           </tr>
                         );
@@ -143,30 +151,29 @@ const Cart = () => {
             </table>
 
             <div className="cart-buttons">
-              <button id="emptycart" onClick={empty}>
+              {/* <button id="emptycart" onClick={empty}>
                 Empty Cart
-              </button>
-              <button id="checkout">Checkout</button>
+              </button> */}
+              {/* <button id="checkout">Checkout</button> */}
             </div>
           </div>
         ) : (
           <>
-          <div className="emptycart-div">
-          <h1 className="mt-3">My Shopping Cart</h1>
+            <div className="emptycart-div">
+              <h1 className="mt-3">My Shopping Cart</h1>
 
-            <h4
-              className="row justify-content-center cart-empty"
-              onClick={empty}
-            >
-              Oops! Your Cart is empty 🙁
-            </h4>
-            <h4 className="cart-add">
-            <Link to="/">
-                <span onClick={onclickHome}> Click here...</span>
-              </Link>
-              Add Your Products {""}
-              
-            </h4>
+              <h4
+                className="row justify-content-center cart-empty"
+                // onClick={empty}
+              >
+                Oops! Your Cart is empty 🙁
+              </h4>
+              <h4 className="cart-add">
+                <Link to="/">
+                  <span onClick={onclickHome}> Click here...</span>
+                </Link>
+                Add Your Products {""}
+              </h4>
             </div>
           </>
         )}

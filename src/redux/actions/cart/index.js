@@ -34,9 +34,4 @@ export function DecreaseQuantity(item){
         payload : item
     }
 }
-export const emptyCart = () => {
-  return {
-    type: 'EMPTY_CART',
-  };
-};
 

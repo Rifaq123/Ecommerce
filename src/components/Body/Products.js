@@ -1,40 +1,30 @@
 import React from "react";
 import Cardsimg from "../common/Cardsimg";
 import productimage from "../../api/productimage.json";
-import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { useState } from "react";
-import { addToCart, DeleteCart, WishList } from "../../redux/actions/cart";
-import Header from "../Header/Header";
 import Cards from "./Cards";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
+import { ToastContainer } from "react-toastify";
 
 const Products = () => {
   const cart = useSelector((state) => state.cart.Wishlist);
+  const carts = useSelector((state) => state.cart.Carts);
 
   const dispatch = useDispatch();
 
   return (
     <div className="container-body">
-      <Header />
+      <ToastContainer/>
       <Cards />
 
       <div className="container-custom ">
         <div className="cardsproduct  px-5 d-flex pb-5">
           <div className="row">
-            {productimage?.map((value, dummy) => {
+            {productimage?.map((value, index) => {
               return (
                 <>
-                  <div className="col-md-4  col-lg-4 carddata">
-                    <div className="wishlists d-flex justify-content-end pt-3 px-3 ">
-                      <div className="wishlist d-flex justify-content-center px-2 py-2  ">
-                        
-                      </div>
-                    </div>
-
+                  <div className="col-md-4  col-lg-4 carddata pt-4">
                     <Cardsimg
+                      carts={carts}
                       cart={cart}
                       id={value.id}
                       image={value.image}
