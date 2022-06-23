@@ -3,120 +3,340 @@
     "id": 1,
     "title": "IPhone 13 Pro",
     "image": "https://images-eu.ssl-images-amazon.com/images/I/3150P3KQFlL._SY445_SX342_QL70_FMwebp_.jpg",
+    "previmg": [
+      {
+        "id": 1,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/3/7/37ce608b2fb08fe72a1c049506ba76a1608e945d.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 2,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/7/7/77c3a622c8bed0a09d1889ed61acd078f64b90da.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 3,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/f/4/f45face7487918ac95c261e446c2a1acadcc1b7e.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 4,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/2/3/23c6e5a13351fe40c9e77175ec912c32786b111c.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 5,
+        "imagepreview": "https://images-eu.ssl-images-amazon.com/images/I/3150P3KQFlL._SY445_SX342_QL70_FMwebp_.jpg"
+      }
+    ],
     "price": 699,
     "freedelivery": "FREE Delivery",
     "quantity": 1,
     "storage": 128,
-    "ram":12,
+    "ram": 12,
     "brand": "APPLE",
     "wishlist": "true"
-
   },
   {
     "id": 2,
-    "title": "Samsung  A73 5G ",
+    "title": "Samsung  A53 5G ",
     "image": "https://images-eu.ssl-images-amazon.com/images/I/41oIDn6WNjL._SX300_SY300_QL70_FMwebp_.jpg",
+    "previmg": [
+      {
+        "id": 1,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/e/c/eca703bb1fa660840c630fa25f260ad38a882bd0.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 2,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/7/f/7f66dc8fb65fb156aa2552729889e1e83bf4864a.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 3,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/c/f/cfb55c92114ad81dc81b8df72f63b84e57cfdfd4.JPG?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 4,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/6/c/6c1ef4475f3cdcf3cc29190b86797ec8f998a4fa.JPG?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 5,
+        "imagepreview": "https://images-eu.ssl-images-amazon.com/images/I/41oIDn6WNjL._SX300_SY300_QL70_FMwebp_.jpg"
+      }
+    ],
     "price": 966,
     "freedelivery": "FREE Delivery",
     "quantity": 1,
     "storage": 128,
-    "ram":8,
+    "ram": 8,
     "brand": "SAMSUNG",
     "wishlist": "true"
-
   },
-
   {
     "id": 3,
     "title": "OnePlus Nord 9T",
     "image": "https://images-eu.ssl-images-amazon.com/images/I/41HSkMxLEJL._SX300_SY300_QL70_FMwebp_.jpg",
+    "previmg": [
+      {
+        "id": 1,
+        "imagepreview": "https://www.91-img.com/pictures/149470-v3-oneplus-nord-ce-2-5g-8gb-ram-mobile-phone-large-2.jpg"
+      },
+      {
+        "id": 2,
+        "imagepreview": "https://www.91-img.com/pictures/149470-v3-oneplus-nord-ce-2-5g-8gb-ram-mobile-phone-large-5.jpg"
+      },
+      {
+        "id": 3,
+        "imagepreview": "https://www.91-img.com/pictures/149470-v3-oneplus-nord-ce-2-5g-8gb-ram-mobile-phone-large-6.jpg"
+      },
+      {
+        "id": 4,
+        "imagepreview": "https://www.91-img.com/pictures/149470-v3-oneplus-nord-ce-2-5g-8gb-ram-mobile-phone-large-7.jpg"
+      },
+      {
+        "id": 4,
+        "imagepreview": "https://images-eu.ssl-images-amazon.com/images/I/41HSkMxLEJL._SX300_SY300_QL70_FMwebp_.jpg"
+      }
+    ],
     "price": 339,
     "freedelivery": "FREE Delivery",
     "quantity": 1,
     "storage": 256,
-    "ram":12,
+    "ram": 12,
     "brand": "ONEPLUS",
     "wishlist": "true"
-
   },
-
   {
     "id": 4,
     "title": "Redmi Note 11 Pro+ ",
     "image": "https://images-eu.ssl-images-amazon.com/images/I/41WytpW9lRL._SX300_SY300_QL70_FMwebp_.jpg",
+    "previmg": [
+      {
+        "id": 1,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/3/4/343bc435de8dab332e7bbc8bb74cf80a500f3d96.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 2,
+        "imagepreview2": "https://www.91-img.com/gallery_images_uploads/5/0/50f3911f5944da245a27a5d1ab779c804e2a5bcf.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 3,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/e/c/ec766069bd20cc0aff8b50458ae28c9f1fef20d7.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 4,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/9/5/95cbefde0fb5ffa4dde783591dc609cb3729a8d8.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 5,
+        "imagepreview": "https://images-eu.ssl-images-amazon.com/images/I/41WytpW9lRL._SX300_SY300_QL70_FMwebp_.jpg"
+      }
+    ],
     "price": 247,
     "freedelivery": "FREE Delivery",
     "quantity": 1,
     "storage": 128,
-    "ram":8,
+    "ram": 8,
     "brand": "REDMI XIAOMI",
     "wishlist": "true"
-
-    },
+  },
   {
     "id": 5,
     "title": "Nokia G10",
-    "image": "https://vlebazaar.in/image/cache/catalog/Nokia-54-Polar-Night-6GB-RAM-64GB-Storage-with-No-Cost-EMIAdditional-Exc/Nokia-54-Polar-Night-6GB-RAM-64GB-Storage-with-No-Cost-EMIAdditional-Exchange-Of-550x550.jpg",
+    "image": "data:image/jpeg;base64,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",
+    "previmg": [
+      {
+        "id": 1,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/d/e/de6a04f43f4d7a2eb268f24a398a6748e009af84.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 2,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/5/b/5be71b2a274a4bb1eb6e8cd63273b93d2c6c6b15.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 3,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/4/3/43af2e62f33be2d76175f47f16ab61b5c77e45d4.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 4,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/e/d/ed54989b0b1591a56addd1369b74a571c832b4f4.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 5,
+        "imagepreview": "data:image/jpeg;base64,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"
+      }
+    ],
     "price": 300,
     "freedelivery": "FREE Delivery",
     "quantity": 1,
     "storage": 64,
-    "ram":6,
+    "ram": 6,
     "brand": "NOKIA",
     "wishlist": "true"
-
-    },
+  },
   {
     "id": 6,
     "title": "Realme 9 Pro",
     "image": "https://www.reliancedigital.in/medias/Realme-9-Pro-Plus-Smart-Phones-492849166-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1OTQwOHxpbWFnZS9qcGVnfGltYWdlcy9oMjIvaGI5Lzk3NzkzMzQzODE1OTguanBnfDMyOWE4MWExMDM1NzliMDcxZWQ5ZWVhN2Q2M2I4YzYyNzVhYTBjYmViZjdkY2MwMzkzMWM5ZmIzM2Q3YmM0YjI",
+    "previmg": [
+      {
+        "id": 1,
+        "imagepreview": "https://www.91-img.com/pictures/147752-v2-realme-9-pro-plus-mobile-phone-large-2.jpg"
+      },
+      {
+        "id": 2,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/d/9/d9dc8abb086bfdefa487a4e7d1cd5a16f10382c2.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 3,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/2/b/2b96eede30ff34a0156dc18e8169a7204049e2d5.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 4,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/0/4/046172f9b7b93a8f3d2ede615f3a159c9fab826f.JPG?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 5,
+        "imagepreview": "https://www.reliancedigital.in/medias/Realme-9-Pro-Plus-Smart-Phones-492849166-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1OTQwOHxpbWFnZS9qcGVnfGltYWdlcy9oMjIvaGI5Lzk3NzkzMzQzODE1OTguanBnfDMyOWE4MWExMDM1NzliMDcxZWQ5ZWVhN2Q2M2I4YzYyNzVhYTBjYmViZjdkY2MwMzkzMWM5ZmIzM2Q3YmM0YjI"
+      }
+    ],
     "price": 235,
     "freedelivery": "FREE Delivery",
     "quantity": 1,
     "storage": 64,
-    "ram":8,
+    "ram": 8,
     "brand": "REALME",
     "wishlist": "true"
-
-    },
+  },
   {
     "id": 7,
     "title": "Vivo Y15s ",
     "image": "https://m.media-amazon.com/images/I/71Irb1PBFCL._SX679_.jpg",
+    "previmg": [
+      {
+        "id": 1,
+        "imagepreview": "https://www.91-img.com/pictures/150156-v1-vivo-y15s-2021-64gb-mobile-phone-large-2.jpg"
+      },
+      {
+        "id": 2,
+        "imagepreview": "https://www.91-img.com/pictures/150156-v1-vivo-y15s-2021-64gb-mobile-phone-large-7.jpg"
+      },
+      {
+        "id": 3,
+        "imagepreview": "https://www.91-img.com/pictures/150156-v1-vivo-y15s-2021-64gb-mobile-phone-large-8.jpg"
+      },
+      {
+        "id": 4,
+        "imagepreview": "https://www.91-img.com/pictures/150156-v1-vivo-y15s-2021-64gb-mobile-phone-large-1.jpg"
+      },
+      {
+        "id": 5,
+        "imagepreview": "https://m.media-amazon.com/images/I/71Irb1PBFCL._SX679_.jpg"
+      }
+    ],
     "price": 260,
     "freedelivery": "FREE Delivery",
     "quantity": 1,
     "storage": 32,
-    "ram":4,
+    "ram": 4,
     "brand": "VIVO",
     "wishlist": "true"
-
   },
   {
     "id": 8,
     "title": "OPPO A15",
-    "image": "https://m.media-amazon.com/images/I/41VSpNuwi+L._SY300_SX300_.jpg",
+    "image": "https://www.mobileshopsilchar.com/wp-content/uploads/2020/12/01_1.jpg",
+    "previmg": [
+      {
+        "id": 1,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/4/a/4a5abddb31e8759e33ea60cf71e3e9da46247b06.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 2,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/5/0/506158730782b63655492b4280978531a958262b.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 3,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/2/9/295dd692a81f91ebabce54e1c89eeb956493bb5f.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 4,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/1/c/1c7c17433c5aa8b0ef41953bd7f02a28109843d2.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 5,
+        "imagepreview": "https://www.mobileshopsilchar.com/wp-content/uploads/2020/12/01_1.jpg"
+      }
+    ],
     "price": 460,
     "freedelivery": "FREE Delivery",
     "quantity": 1,
     "storage": 16,
-    "ram":4,
+    "ram": 4,
     "brand": "OPPO",
     "wishlist": "true"
-
   },
- 
   {
     "id": 9,
     "title": "Moto G 52",
-    "image": "https://www.91-img.com/pictures/150015-v8-moto-g52-mobile-phone-large-1.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqpBvXFM2sQoAtGd2g98zB9MRJ43v1Yff5sg&usqp=CAU",
+    "previmg": [
+      {
+        "id": 1,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/f/9/f980dc67906eda3a70b491500065289f949a003f.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 2,
+        "imagepreview2": "https://www.91-img.com/gallery_images_uploads/1/a/1a5f99a98f7a42b3d27a1c6ef8c0268c41418672.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 3,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/f/3/f3272119ee98dd3f3139bdd3171d8b0c82b9e641.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 4,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/6/0/60b36a871effe976f13d9162904eb229f4545a41.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 5,
+        "imagepreview": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqpBvXFM2sQoAtGd2g98zB9MRJ43v1Yff5sg&usqp=CAU"
+      }
+    ],
     "price": 377,
     "freedelivery": "FREE Delivery",
     "quantity": 1,
     "storage": 64,
-    "ram":4,
+    "ram": 4,
     "brand": "MOTOROLA",
     "wishlist": "true"
-
+  },
+  {
+    "id": 10,
+    "title": "IPhone 13 Pro",
+    "image": "https://images-eu.ssl-images-amazon.com/images/I/3150P3KQFlL._SY445_SX342_QL70_FMwebp_.jpg",
+    "previmg": [
+      {
+        "id": 1,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/3/7/37ce608b2fb08fe72a1c049506ba76a1608e945d.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 2,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/7/7/77c3a622c8bed0a09d1889ed61acd078f64b90da.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 3,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/f/4/f45face7487918ac95c261e446c2a1acadcc1b7e.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 4,
+        "imagepreview": "https://www.91-img.com/gallery_images_uploads/2/3/23c6e5a13351fe40c9e77175ec912c32786b111c.jpg?w=0&h=901&q=80&c=1"
+      },
+      {
+        "id": 5,
+        "imagepreview": "https://images-eu.ssl-images-amazon.com/images/I/3150P3KQFlL._SY445_SX342_QL70_FMwebp_.jpg"
+      }
+    ],
+    "price": 699,
+    "freedelivery": "FREE Delivery",
+    "quantity": 1,
+    "storage": 128,
+    "ram": 12,
+    "brand": "APPLE",
+    "wishlist": "true"
   }
 ]

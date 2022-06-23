@@ -135,7 +135,7 @@ right: 0;
 }
 
 .cardsproduct{
-  background-color: #eee;
+  /* background-color: #eee; */
     border-radius: 0.5rem 0.5rem 0 0;
 }
 .cardsproduct a {
@@ -215,16 +215,11 @@ right: 0;
     border-radius: 10px;
 
 }
-.textcard{
-  /* padding: unset !important; */
-}
-
-
 
 .productimage{
   /* height: 22vh; */
   /* min-height: 44vh; */
-  min-height: 29vh;
+  /* min-height: 29vh; */
 }  /* max-height: 30vh; */
       /* object-fit: none !important;
     padding-left: 0px !important;
@@ -446,13 +441,13 @@ right: 0;
 }
 .preview-img img {
 
-width: 60%;
-min-width: 50%;
+/* width: 100%; */
+/* min-width: 50%; */
 /* padding: 30px; */
 border-radius: 8px
 }
 .preview-body{
-  background-color: #f1f7ff;
+  background-color: white;
   border-radius: 8px;
   padding: 25px 79px;
 
@@ -613,7 +608,7 @@ hr {
 }
 
 .emptycart-div{
-  background-color: #f1f7ff;
+  /* background-color: #f1f7ff; */
   border-radius: 5px;
   padding-bottom: 30px;
   margin: auto;
@@ -631,10 +626,10 @@ hr {
 }
 .cart-container {
   border:1px solid #E0E4CC;
-  border-radius:5px;
+  border-radius:8px;
   margin-top:1em;
   padding:1em;
-  background-color: #ebf5ff;
+  background-color: white;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -672,6 +667,7 @@ table td, table th {
   padding:0.25em 1em;
   border-bottom:1px solid
    #E0E4CC;
+   
 }
 tbody tr td{
 }
@@ -708,12 +704,12 @@ table td:nth-last-child(1) {
   margin:1em 0;
 }
 
-.cart-empty{
-  height: 33.3vh;
+.cart-empty {
+  height: 23vh;
   align-items: center;
   color: red;
-  font-weight: 500;
-  font-size: 50px;
+  font-weight: 100;
+  font-size: 31px;
   cursor: pointer;
 }
 .cart-add{
@@ -980,7 +976,7 @@ text-align: center;
 
 .cart-image img{
   width: auto !important;
-  height: 60px !important;
+  height: 61px !important;
 }
 
 
@@ -1042,3 +1038,66 @@ background-color: gray;
   padding-right: 20px;
   cursor: pointer;
  }
+
+
+
+
+
+
+ .img-title {
+  font-weight: bolder;
+  margin-left: 95px;
+  font-size: x-large;
+}
+
+
+.cart-image {
+/* width: 100%; */
+  background: white;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+
+.card-prev-img {
+  width: 60%;
+    min-width: 70%;
+    min-height: 40px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+
+}
+
+.card-prev-img img{
+  width: auto;
+    
+
+}
+
+
+.previewimg {
+  margin-top: 94px;
+}
+
+.product-price-discount ul li{
+  list-style-type: none;
+  font-size: small;
+
+}
+
+
+.blue{
+  color: #0077dc;
+  font-weight: 700;
+}
+
+.productdiscount li{
+  list-style-type: none;
+
+}
+
+.wishlist-img img{
+  width: 60% !important;
+  float: left;
+}

@@ -40,11 +40,12 @@ const Cart = () => {
                   <table className="table ">
                     <thead>
                       <tr>
-                        <th>Product Name</th>
-                        <th>Product Image</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Total Price</th>
+                        <th className="col-2">Product Name</th>
+                        <th className="col-2">  Product Image</th>
+                        <th className="col-2">Price</th>
+                        <th className="col-2">Quantity</th>
+                        <th className="col-2">Total Price</th>
+                        <th className="col-2"></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -140,8 +141,7 @@ const Cart = () => {
               </tr>
               <tr>
                 <td>
-                  {" "}
-                  x <span id="itemsquantity">{cartitem}</span>{" "}
+                   <span id="itemsquantity">{cartitem}</span>
                 </td>
 
                 <td className="d-flex align-items-center justify-content-center">
@@ -160,19 +160,14 @@ const Cart = () => {
         ) : (
           <>
             <div className="emptycart-div">
-              <h1 className="mt-3">My Shopping Cart</h1>
+              {/* <h1 className="mt-3">My Shopping Cart</h1> */}
+              <img src="https://shop.millenniumbooksource.com/static/images/cart1.png"/>
 
-              <h4
-                className="row justify-content-center cart-empty"
-                // onClick={empty}
-              >
-                Oops! Your Cart is empty 🙁
-              </h4>
+        
               <h4 className="cart-add">
                 <Link to="/">
-                  <span onClick={onclickHome}> Click here...</span>
+                  <button className="btn btn-dark"onClick={onclickHome}> Keep Shopping.</button>
                 </Link>
-                Add Your Products {""}
               </h4>
             </div>
           </>

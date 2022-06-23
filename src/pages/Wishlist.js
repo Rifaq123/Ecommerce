@@ -4,8 +4,12 @@ import Typography from "@mui/material/Typography";
 import { Link, Navigate } from "react-router-dom";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, DeleteCart } from "../redux/actions/cart";
+import { addToCart, DeleteCart, WishList } from "../redux/actions/cart";
 import { HOME } from "../config/constants";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import { red } from "@mui/material/colors";
+import { toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 const Wishlist = () => {
   const cart = useSelector((state) => state.cart.Wishlist);
@@ -17,6 +21,8 @@ const Wishlist = () => {
 
   return (
     <div className="wishlist-body">
+      <ToastContainer />
+
       <div className="container-body">
         <div className="container-custom-preview mt-5">
           <>
@@ -30,14 +36,24 @@ const Wishlist = () => {
                         return (
                           <>
                             <div className="wishlist-par">
+                              <p className="heart">
+                                <FavoriteIcon
+                                  sx={{ color: red[500] }}
+                                  onClick={() => {
+                                    dispatch(WishList(item));
+                                    toast.error("Removed from Wishlist", {
+                                      autoClose: 1000,
+                                    });
+                                  }}
+                                />
+                                
+                              </p>
                               <div className="product-name mt-5">
                                 {item.title}
-                                <p className="product-count wishdel">
-                                  {/* <DeleteForeverIcon sx={{ color: red[500] }}   onClick={() => dispatch(DeleteCart(item))}/> */}
-                                </p>
+                              
                               </div>
                               <div className="reviews-counter d-flex justify-content-center mt-3">
-                                <div id="slider" className="preview-img">
+                                <div id="slider" className="preview-img wishlist-img">
                                   <div className="cart">
                                     <img src={item.image} />
                                   </div>
@@ -80,20 +96,16 @@ const Wishlist = () => {
                 ) : (
                   <>
                     <div className="emptycart-div">
-                      <h1 className="mt-3">My WishLists</h1>
-                      <h4
-                        className="row justify-content-center cart-empty"
-                        // onClick={empty}
-                      >
-                        Wishlist is empty !
-                      </h4>
-                      <h4 className="cart-add">
-                        <Link to="/">
-                          <span onClick={onclickHome}> Click here...</span>
-                        </Link>
-                        Add Your Products to wishlists {""}
-                      </h4>
-                    </div>
+              {/* <h1 className="mt-3">My Shopping Cart</h1> */}
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgL9qUmriCAWE_5kuuUkL-UaGhGQiIyncMYg&usqp=CAU"/>
+
+        
+              <h4 className="cart-add mt-5">
+                <Link to="/">
+                  <button className="btn btn-dark"onClick={onclickHome}> Keep Shopping</button>
+                </Link>
+              </h4>
+            </div>
                   </>
                 )}
               </div>

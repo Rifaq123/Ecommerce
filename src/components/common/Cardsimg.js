@@ -13,6 +13,7 @@ import { addToCart, ViewProduct, WishList } from "../../redux/actions/cart";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { red } from "@mui/material/colors";
 import { purple } from "@mui/material/colors";
+import { white } from "@mui/material/colors";
 import { toast } from "react-toastify";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
@@ -28,24 +29,33 @@ function Cardsimg(props) {
               <p className="heart">
                 <FavoriteIcon
                   sx={{ color: red[500] }}
-                  onClick={() => dispatch(WishList(props.wishlist))}
+                  onClick={() => {
+                    dispatch(WishList(props.wishlist));
+                    toast.error("Removed from Wishlist", { autoClose: 1000 });
+                  }}
                 />
               </p>
             ) : (
               <p className="heart">
                 <FavoriteBorderIcon
-                  onClick={() => dispatch(WishList(props.wishlist))}
+                  onClick={() => {
+                    dispatch(WishList(props.wishlist));
+                    toast.success("Added to Wishlist", { autoClose: 1000 });
+                  }}
                 />
               </p>
             )}
-            <CardMedia
-              component="img"
-              image={props.image}
-              alt="green iguana"
-              sx={{ px: 5 }}
-              className="productimage"
-            />
 
+            <Link to="/Preview">
+              <CardMedia
+                component="img"
+                image={props.image}
+                alt="green iguana"
+                sx={{ px: 5 }}
+                className="productimage"
+                onClick={() => dispatch(ViewProduct(props.view))}
+              />
+            </Link>
             <CardContent sx={{ pb: 4, px: 0 }} className="textcard">
               <Typography
                 gutterBottom
@@ -78,41 +88,47 @@ function Cardsimg(props) {
               >
                 {props.freedelivery}
               </Typography>
+              <div className="d-flex justify-content-center align-items-center">
+                <Link to="/Preview">
+                  <div>
+                    <button
+                      type="button"
+                      class="btn btn-dark whitepreview mx-1"
+                      id="checkout"
+                      onClick={() => dispatch(ViewProduct(props.view))}
+                    >
+                      <VisibilityIcon
+                        className="mx-1"
+                      />
+                    </button>
+                  </div>
+                </Link>
 
-              <Link to="/Preview">
-                <div>
-                  <VisibilityIcon
-                    sx={{ color: "black" }}
-                    className="mx-1"
-                    onClick={() => dispatch(ViewProduct(props.view))}
-                  />
-                </div>
-              </Link>
-
-              {props.carts.find((e) => e.id == props.id) ? (
-                <Link to="/Cart">
+                {props.carts.find((e) => e.id == props.id) ? (
+                  <Link to="/Cart">
+                    <button
+                      type="button"
+                      class="btn btn-dark whitepreview mx-1"
+                      id="checkout"
+                      onClick={() => dispatch(addToCart(props.main))}
+                    >
+                      <ShoppingCartIcon sx={{ color: red[500] }} />
+                    </button>
+                  </Link>
+                ) : (
                   <button
                     type="button"
                     class="btn btn-dark whitepreview mx-1"
                     id="checkout"
-                    onClick={() => dispatch(addToCart(props.main))}
+                    onClick={() => {
+                      dispatch(addToCart(props.main));
+                      toast.success("Added to cart", { autoClose: 1000 });
+                    }}
                   >
-                    Go to cart <ShoppingCartIcon sx={{ color: purple[500] }} />
+                    <ShoppingCartIcon />
                   </button>
-                </Link>
-              ) : (
-                <button
-                  type="button"
-                  class="btn btn-dark whitepreview mx-1"
-                  id="checkout"
-                  onClick={() => {
-                    dispatch(addToCart(props.main));
-                    toast.success("Added to cart", { autoClose: 1000 });
-                  }}
-                >
-                  Add to cart <ShoppingCartIcon />
-                </button>
-              )}
+                )}
+              </div>
             </CardContent>
           </CardActionArea>
         </Card>
