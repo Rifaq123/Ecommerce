@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <>
       <div className="contain">
-        <nav class="navbar navbar-light bg-light d-flex justify-content-between">
+        <nav className="navbar navbar-light bg-light d-flex justify-content-between">
           <div className="nav-logo" onClick={onclickHome}>
             {/* MOBILY */}
             <img src={logo} alt="" />
@@ -110,6 +110,8 @@ export default function Header() {
                     />
                   </Link>
 
+                  <Link to="/Login">
+
                   <BottomNavigationAction label="Login" icon={<LoginIcon />} />
                   <Box
                     sx={{
@@ -120,10 +122,18 @@ export default function Header() {
                       alignItems: "center",
                     }}
                   ></Box>
+                                    </Link>
+
+
                 </BottomNavigation>
               </Stack>
+
             </Box>
+            <Link to="/Signup">
+
             <Avatar src="/broken-image.jpg" sx={{ m: 1 }} />
+            </Link>
+
           </div>
         </nav>
       </div>

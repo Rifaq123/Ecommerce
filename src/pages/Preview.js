@@ -18,12 +18,12 @@ import ReactImageZoom from "react-image-zoom";
 
 const Preview = () => {
   const cart = useSelector((state) => state.cart.preview);
-  console.log("cart", cart);
+
   const dispatch = useDispatch();
 
   const [preview, setPreview] = useState(cart.image);
 
-  // console.log("setPreview", preview);
+  console.log("setPreview", preview);
 
   const onclickHome = (e) => {
     navigate(HOME);
@@ -33,12 +33,12 @@ const Preview = () => {
     height: 300,
     img: preview,
     zoomPosition: "bottom",
-    zoomWidth: 500,
-    scale: 0.8,
+    zoomWidth: 1200,
+    scale: 1,
   };
 
   return (
-    <div className="container-body">
+    <div className="container-bodyy">
       <Header />
       {Object.values(cart).length != 0 ? (
         <div className="container-custom-preview mt-5">
@@ -49,90 +49,23 @@ const Preview = () => {
                   <div className="preview-img ">
                     <div className="cart d-flex justify-content-center align-items-center">
                       <div className="slides d-flex flex-column mx-4">
-                        {
-                          cart.previmg.map((item)=>{
-                            return(
-                              <div  className={
-                                cart.imagepreview === preview
+                        {cart.previmg.map((item, index) => {
+                          return (
+                            <div
+                              key={index}
+                              className={
+                                item.imagepreview === preview
                                   ? "border  border-dark border-2 cart-image mt-2 "
                                   : "cart-image mt-2  opacity-50"
-                              }>
-                                <img src={item.imagepreview} onClick={()=>setPreview(item.imagepreview)}/>
-                                </div>
-                            )
-                          })
-                        }
-                        {/*                         
-                        <div
-                          className={
-                            cart.imagepreview1 === preview
-                              ? "border  border-dark border-2 cart-image mt-2 "
-                              : "cart-image mt-2  opacity-50"
-                          }
-                        >
-                          <img
-                            src={cart.imagepreview1}
-                            onClick={() => setPreview(cart.imagepreview1)}
-                            
-                          />
-                        </div>
-
-                        <div
-                          className={
-                            cart.imagepreview2 === preview
-                              ? "border border-dark border-2 cart-image mt-2 "
-                              : "cart-image mt-2  opacity-50"
-                          }
-                        >
-                          <img
-                            src={cart.imagepreview2}
-                            onClick={() => setPreview(cart.imagepreview2)}
-                            className="card-prev-img"
-                          />
-                        </div>
-
-                        <div
-                          className={
-                            cart.image === preview
-                              ? "border border-dark border-2 cart-image mt-2"
-                              : "cart-image mt-2  opacity-50"
-                          }
-                        >
-                          <img
-                            src={cart.image}
-                            onClick={() => setPreview(cart.image)}
-                            className="card-prev-img"
-                          />
-                          
-                        </div>
-
-                        <div
-                          className={
-                            cart.imagepreview3 === preview
-                              ? "border border-dark  border-2 cart-image mt-2"
-                              : "cart-image mt-2  opacity-50"
-                          }
-                        >
-                          <img
-                            src={cart.imagepreview3}
-                            onClick={() => setPreview(cart.imagepreview3)}
-                            className="card-prev-img"
-                          />
-                        </div>
-
-                        <div
-                          className={
-                            cart.imagepreview4 === preview
-                              ? "border border-dark  border-2 cart-image mt-2"
-                              : "cart-image mt-2  opacity-50"
-                          }
-                        >
-                          <img
-                            src={cart.imagepreview4}
-                            onClick={() => setPreview(cart.imagepreview4)}
-                            className="card-prev-img"
-                          />
-                        </div> */}
+                              }
+                            >
+                              <img
+                                src={item.imagepreview}
+                                onClick={() => setPreview(item.imagepreview)}
+                              />
+                            </div>
+                          );
+                        })}
                       </div>
                       <div className="card-prev-img">
                         <ReactImageZoom {...props} />
@@ -141,6 +74,67 @@ const Preview = () => {
                       </div>
                     </div>
                     {/* <div className="img-title mt-5">{cart.title}</div> */}
+                    <div className="ulproduct mt-5">
+                      <ul className="d-flex flex-column align-items-start mt-3">
+                        <li>
+                          <DiscountIcon
+                            sx={{ color: green[500], marginRight: 1 }}
+                          />
+                          Special PriceGet extra 10% off (price inclusive of
+                          discount) <span className="blue">T&C</span>
+                        </li>
+                        <li>
+                          {" "}
+                          <DiscountIcon
+                            sx={{ color: green[500], marginRight: 1 }}
+                          />
+                          Combo Offer Buy 3 or more save 10%
+                          <span className="blue">See all productsT&C</span>
+                        </li>
+                        <li>
+                          <DiscountIcon
+                            sx={{ color: green[500], marginRight: 1 }}
+                          />
+                          Combo Offer Buy 5+ save 10%{" "}
+                          <span className="blue"> See all productsT&C</span>
+                        </li>
+                        <li>
+                          <DiscountIcon
+                            sx={{ color: green[500], marginRight: 1 }}
+                          />
+                          Bank Offer 5% Cashback on Flipkart Axis Bank Card{" "}
+                          <span className="blue">T&C</span>
+                        </li>
+                        <li>
+                          <DiscountIcon
+                            sx={{ color: green[500], marginRight: 1 }}
+                          />
+                          Bank OfferFlat ₹100 Off* On 1st Transaction through
+                          Flipkart <span className="blue">T&C</span>
+                        </li>
+                      </ul>
+                      <ul className="d-flex flex-column align-items-start mt-3 productdiscount">
+                        <li>
+                          <LocalOfferIcon
+                            sx={{ color: blue[500], marginRight: 1 }}
+                          />
+                          6 Months Warranty
+                        </li>
+                        <li>
+                          {" "}
+                          <KeyboardReturnIcon
+                            sx={{ color: blue[500], marginRight: 1 }}
+                          />
+                          10 Days return Policy?
+                        </li>
+                        <li>
+                          <PaymentIcon
+                            sx={{ color: blue[500], marginRight: 1 }}
+                          />
+                          Cash on Delivery available
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
 
@@ -148,7 +142,7 @@ const Preview = () => {
                   <div className="product-dtl">
                     <div className="product-info">
                       <div className="product-name">{cart.title}</div>
-                      <div className="reviews-counter d-flex justify-content-center mt-3">
+                      <div className="reviews-counter d-flex align-items-center mt-4">
                         <div className="rate">
                           <Typography gutterBottom variant="h6" component="div">
                             <Rating
@@ -164,48 +158,28 @@ const Preview = () => {
                       <div className="product-price-discount">
                         <span>${cart.price}</span>
                         <span className="line-through">$299.00</span>
-                        <ul className="d-flex flex-column align-items-start mt-3">
-                          <li>
-                            <DiscountIcon
-                              sx={{ color: green[500], marginRight: 1 }}
-                            />
-                            Special PriceGet extra 10% off (price inclusive of
-                            discount) <span className="blue">T&C</span>
-                          </li>
-                          <li>
-                            {" "}
-                            <DiscountIcon
-                              sx={{ color: green[500], marginRight: 1 }}
-                            />
-                            Combo Offer Buy 3 or more save 10%
-                            <span className="blue">See all productsT&C</span>
-                          </li>
-                          <li>
-                            <DiscountIcon
-                              sx={{ color: green[500], marginRight: 1 }}
-                            />
-                            Combo Offer Buy 5+ save 10%{" "}
-                            <span className="blue"> See all productsT&C</span>
-                          </li>
-                          <li>
-                            <DiscountIcon
-                              sx={{ color: green[500], marginRight: 1 }}
-                            />
-                            Bank Offer 5% Cashback on Flipkart Axis Bank Card{" "}
-                            <span className="blue">T&C</span>
-                          </li>
-                          <li>
-                            <DiscountIcon
-                              sx={{ color: green[500], marginRight: 1 }}
-                            />
-                            Bank OfferFlat ₹100 Off* On 1st Transaction through
-                            Flipkart Pay Later <span className="blue">T&C</span>
-                          </li>
-                        </ul>
                       </div>
                     </div>
 
-                    <div className="row d-flex justify-content-start">
+                    <div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat.
+                      </p>
+                      <div className="d-flex justify-content-end">
+                      <a
+                        href="#"
+                        className="round-black-btn"
+                        onClick={() => dispatch(addToCart(cart))}
+                      >
+                        Add to Cart
+                      </a>
+                      </div>
+                    </div>
+                    <div className="row d-flex justify-content-start tableproduct">
                       <div className="col-md-12 p-0 d-flex justify-content-center">
                         <table className="table table-bordered ">
                           <thead>
@@ -235,45 +209,8 @@ const Preview = () => {
                           </tbody>
                         </table>
                       </div>
-
-                      <a
-                        href="#"
-                        className="round-black-btn"
-                        onClick={() => dispatch(addToCart(cart))}
-                      >
-                        Add to Cart
-                      </a>
                     </div>
-                    <ul className="d-flex flex-column align-items-start mt-3 productdiscount">
-                      <li>
-                        <LocalOfferIcon
-                          sx={{ color: blue[500], marginRight: 1 }}
-                        />
-                        6 Months Warranty
-                      </li>
-                      <li>
-                        {" "}
-                        <KeyboardReturnIcon
-                          sx={{ color: blue[500], marginRight: 1 }}
-                        />
-                        10 Days return Policy?
-                      </li>
-                      <li>
-                        <PaymentIcon
-                          sx={{ color: blue[500], marginRight: 1 }}
-                        />
-                        Cash on Delivery available
-                      </li>
-                    </ul>
-                    <div>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat.
-                      </p>
-                    </div>
+                  
                   </div>
                 </div>
               </div>
@@ -282,14 +219,18 @@ const Preview = () => {
         </div>
       ) : (
         <div className="emptycart-div">
+           <h4 className="cart-add d-flex align-items-center justify-content-center">
+            <Link to="/">
+              <button className="btn btn-dark" onClick={onclickHome}>
+                {" "}
+                Keep Shopping
+              </button>
+            </Link>
+          </h4>
           <h4 className="row justify-content-center cart-empty">
             No Products Previewed
           </h4>
-          <h4 className="cart-add">
-            <Link to="/">
-              <button className="btn btn-dark" onClick={onclickHome}> Keep Shopping</button>
-            </Link>
-          </h4>
+         
         </div>
       )}
     </div>

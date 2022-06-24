@@ -46,14 +46,15 @@ const Wishlist = () => {
                                     });
                                   }}
                                 />
-                                
                               </p>
                               <div className="product-name mt-5">
                                 {item.title}
-                              
                               </div>
-                              <div className="reviews-counter d-flex justify-content-center mt-3">
-                                <div id="slider" className="preview-img wishlist-img">
+                              <div className="reviews-counter d-flex justify-content-around mt-3">
+                                <div
+                                  id="slider"
+                                  className="preview-img wishlist-img"
+                                >
                                   <div className="cart">
                                     <img src={item.image} />
                                   </div>
@@ -77,14 +78,14 @@ const Wishlist = () => {
                                     <span className="line-through">
                                       $299.00
                                     </span>
-                                    <a
-                                      href="#"
-                                      className="round-black-btn"
-                                      onClick={() => dispatch(addToCart(item))}
-                                    >
-                                      Add to Cart
-                                    </a>
                                   </div>
+                                  <a
+                                    href="#"
+                                    className="round-black-btn"
+                                    onClick={() => dispatch(addToCart(item))}
+                                  >
+                                    Add to Cart
+                                  </a>
                                 </div>
                               </div>
                             </div>
@@ -96,16 +97,23 @@ const Wishlist = () => {
                 ) : (
                   <>
                     <div className="emptycart-div">
-              {/* <h1 className="mt-3">My Shopping Cart</h1> */}
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgL9qUmriCAWE_5kuuUkL-UaGhGQiIyncMYg&usqp=CAU"/>
+                      {/* <h1 className="mt-3">My Shopping Cart</h1> */}
+                      <Link to="/">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgL9qUmriCAWE_5kuuUkL-UaGhGQiIyncMYg&usqp=CAU" />
+                      </Link>
 
-        
-              <h4 className="cart-add mt-5">
-                <Link to="/">
-                  <button className="btn btn-dark"onClick={onclickHome}> Keep Shopping</button>
-                </Link>
-              </h4>
-            </div>
+                      <h4 className="cart-add mt-5">
+                        <Link to="/">
+                          <button
+                            className="btn btn-dark"
+                            onClick={onclickHome}
+                          >
+                            {" "}
+                            Keep Shopping
+                          </button>
+                        </Link>
+                      </h4>
+                    </div>
                   </>
                 )}
               </div>

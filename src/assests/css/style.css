@@ -69,6 +69,10 @@ right: 0;
     padding-left: 9%;
 
 }
+.foot-logo{
+  width: 20%;
+  padding-left: unset;
+}
 .nav-logo img {
   width: 100%;
 }
@@ -101,8 +105,9 @@ right: 0;
     display: grid;
     align-items: center;
     padding: 10px;
-    background-color: #ebf5ff;
+    background-color: white;
     border-radius: 10px;
+    cursor:pointer;
 }
 .cardcircle img{
     width: 100%;
@@ -112,8 +117,8 @@ right: 0;
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    margin-top: 20px;
-    
+    margin-top: 55px;
+    width: 100%;    
 }
 
 .CardsMobilehead{
@@ -127,6 +132,9 @@ right: 0;
     /* color: #ffffff; */
     font-weight: 700;
     padding: 5px 10px;
+    margin-top: 61px;
+    cursor: pointer;
+
 }
 
 .CardsMobilehead p{
@@ -566,7 +574,7 @@ button .view{
  background: #69d2e7;
 background: -moz-linear-gradient(-45deg, #69d2e7 0%, #a7dbd8 25%, #e0e4cc 46%, #e0e4cc 54%, #b1937c 75%, #fa6900 100%);
 background: -webkit-linear-gradient(-45deg, #69d2e7 0%,#a7dbd8 25%,#e0e4cc 46%,#e0e4cc 54%,#f38630 75%,#fa6900 100%);
-background: linear-gradient(135deg, #69d2e7 0%,#a7dbd8 25%,#e0e4cc 46%,#e0e4cc 54%,#f38630 75%,#fa6900 100%);
+background: linear-gradient(135deg, #69d2e7 0%,#a7dbd8 25%,#e0e4cc 46%,#e0e4cc 54%,#f1c5a3 75%,#f1cca7 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#69d2e7', endColorstr='#fa6900',GradientType=1 );
 min-height: 100vh;
 
@@ -1063,7 +1071,7 @@ background-color: gray;
   width: 60%;
     min-width: 70%;
     min-height: 40px;
-    padding: 10px;
+    padding: 56px  0;
     background-color: white;
     border-radius: 8px;
 
@@ -1100,4 +1108,28 @@ background-color: gray;
 .wishlist-img img{
   width: 60% !important;
   float: left;
+}
+.ulproduct{
+  margin-top: 80px !important;
+
+}
+.ulproduct ul{
+  padding-left: unset;
+}
+.ulproduct ul li {
+list-style-type: none;
+}
+.tableproduct{
+  margin-top: 160px !important;
+
+}
+.white{
+  color: white;
+}
+
+.containerfooter{
+  /* position: absolute; */
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
 }

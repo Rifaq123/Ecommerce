@@ -159,9 +159,12 @@ const Cart = () => {
           </div>
         ) : (
           <>
-            <div className="emptycart-div">
+            <div className="emptycart-div"style={{minHeight: "100vh"}}>
               {/* <h1 className="mt-3">My Shopping Cart</h1> */}
+              <Link to="/">
+
               <img src="https://shop.millenniumbooksource.com/static/images/cart1.png"/>
+              </Link>
 
         
               <h4 className="cart-add">
