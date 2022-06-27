@@ -169,7 +169,7 @@ const Cart = () => {
         
               <h4 className="cart-add">
                 <Link to="/">
-                  <button className="btn btn-dark"onClick={onclickHome}> Keep Shopping.</button>
+                  <button className="btn btn-dark"onClick={onclickHome}> Keep Shopping</button>
                 </Link>
               </h4>
             </div>

@@ -9,7 +9,7 @@ const Signup = () => {
           <div className="titlee">Signup</div>
           <div className="content">
             <form action="#">
-              <div className="user-details">
+              <div className="user-details mt-5">
                 <div className="input-box">
                   <span className="details">Full Name</span>
                   <input type="text" placeholder="Enter your name" required />

@@ -4,6 +4,7 @@ import productimage from "../../api/productimage.json";
 import { useDispatch, useSelector } from "react-redux";
 import Cards from "./Cards";
 import { ToastContainer } from "react-toastify";
+import ScrollToTopBtn from "../../helpers/ScrollToTop";
 
 // const data = [
 //   {
@@ -148,7 +149,10 @@ const Products = () => {
           </div>
         </div>
       </div>
+      <ScrollToTopBtn />
+
     </div>
+    
   );
 };
 

@@ -169,7 +169,7 @@ const Preview = () => {
                         nostrud exercitation ullamco laboris nisi ut aliquip ex
                         ea commodo consequat.
                       </p>
-                      <div className="d-flex justify-content-end">
+                      <div className="d-flex justify-content-start">
                       <a
                         href="#"
                         className="round-black-btn"

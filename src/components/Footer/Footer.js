@@ -130,7 +130,7 @@ const Footer = () => {
         //   style={{background-color: }}
           style={{backgroundColor: "white"}}
         >
-          <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
+          <a className="text-reset fw-bold" href="https://MOBILYShopp.com/">
           MOBILYShopp.com
           </a>
         </div>
